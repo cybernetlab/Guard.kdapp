@@ -8,7 +8,7 @@
   "forceUpdate": false,
   "openWith": "lastActive",
   "behavior": "application",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "name": "Guard",
   "identifier": "com.koding.apps.guard",
   "path": "~/Applications/Guard.kdapp",
@@ -26,14 +26,14 @@
       }
     },
     "stylesheets": [
-      "./resources/style.css"
+      "https://github.com/cybernetlab/Guard.kdapp/raw/v0.1.3/resources/style.css"
     ]
   },
   "options": {
     "type": "tab"
   },
   "icns": {
-    "128": "./resources/guard.128.png"
+    "128": "https://github.com/cybernetlab/Guard.kdapp/raw/v0.1.3/resources/guard.128.png"
   },
   "screenshots": [],
   "menu": [],
