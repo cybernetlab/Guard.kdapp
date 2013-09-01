@@ -10,7 +10,7 @@ class GuardApp extends JView
       partial  : """
         <p>Guard will scan your home directory for files named &quot;Guardfile&quot; and list it below.
         Then you can start <a href="https://github.com/guard/guard">guard</a> application for each of them</p>
-        <p>Waring! RVM is not supported yet. Use native ruby or rbenv.</p>
+        <p> RVM is not supported yet. Use native ruby or rbenv.</p>
       """
     @projects = new KDListViewController
       startWithLazyLoader : yes

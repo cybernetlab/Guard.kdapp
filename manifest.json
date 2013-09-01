@@ -1,5 +1,5 @@
 {
-  "devMode": true,
+  "devMode": false,
   "experimental": false,
   "authorNick": "alexiss",
   "multiple": false,
@@ -8,7 +8,7 @@
   "forceUpdate": false,
   "openWith": "lastActive",
   "behavior": "application",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "Guard",
   "identifier": "com.koding.apps.guard",
   "path": "~/Applications/Guard.kdapp",
