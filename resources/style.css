@@ -1,0 +1,36 @@
+.information-box {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+.projects .kdview.kdlistitemview {
+  clear: both;
+  margin: 5px;
+}
+
+.projects .kdview.kdlistitemview .kdinput.on-off {
+  float: left;
+  margin: 5px;
+}
+
+.projects .kdview.kdlistitemview .item-body {
+  margin: 5px;
+  padding-top: 2px;
+}
+
+.notify-header {
+  font-weight: bold;
+}
+
+.notify-success {
+  color: green;
+}
+
+.notify-failed {
+  color: red;
+}

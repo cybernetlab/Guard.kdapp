@@ -1,0 +1,41 @@
+{
+  "devMode": true,
+  "experimental": false,
+  "authorNick": "alexiss",
+  "multiple": false,
+  "background": false,
+  "hiddenHandle": false,
+  "forceUpdate": false,
+  "openWith": "lastActive",
+  "behavior": "application",
+  "version": "0.1.0",
+  "name": "Guard",
+  "identifier": "com.koding.apps.guard",
+  "path": "~/Applications/Guard.kdapp",
+  "homepage": "alexiss.kd.io/guard",
+  "author": "Alexey Ovchinnikov",
+  "repository": "git://github.com/alexiss/Guard.kdapp.git",
+  "description": "Guard: a koding.com wrapper for guard.",
+  "category": "web-app",
+  "source": {
+    "blocks": {
+      "app": {
+        "files": [
+          "./index.coffee"
+        ]
+      }
+    },
+    "stylesheets": [
+      "./resources/style.css"
+    ]
+  },
+  "options": {
+    "type": "tab"
+  },
+  "icns": {
+    "128": "./resources/guard.128.png"
+  },
+  "screenshots": [],
+  "menu": [],
+  "fileTypes": []
+}
