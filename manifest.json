@@ -8,11 +8,11 @@
   "forceUpdate": false,
   "openWith": "lastActive",
   "behavior": "application",
-  "version": "0.1.3",
+  "version": "",
   "name": "Guard",
   "identifier": "com.koding.apps.guard",
   "path": "~/Applications/Guard.kdapp",
-  "homepage": "alexiss.kd.io/guard",
+  "homepage": "git://github.com/alexiss/Guard.kdapp.git",
   "author": "Alexey Ovchinnikov",
   "repository": "git://github.com/alexiss/Guard.kdapp.git",
   "description": "Guard: a koding.com wrapper for guard.",
@@ -26,14 +26,14 @@
       }
     },
     "stylesheets": [
-      "https://github.com/cybernetlab/Guard.kdapp/raw/v0.1.3/resources/style.css"
+      "http://alexiss.kd.io/.applications/guard/resources/style.css"
     ]
   },
   "options": {
     "type": "tab"
   },
   "icns": {
-    "128": "https://github.com/cybernetlab/Guard.kdapp/raw/v0.1.3/resources/guard.128.png"
+    "128": "http://alexiss.kd.io/.applications/guard/resources/guard.128.png"
   },
   "screenshots": [],
   "menu": [],
