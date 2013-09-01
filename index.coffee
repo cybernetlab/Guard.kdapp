@@ -61,11 +61,7 @@ class GuardApp extends JView
       setTimeout =>
         @watch(project)
       , 5000
-      #new KDNotificationView
-      #  title: "TIMER #{project.watch} #{parseInt(response.trim())}"
       stat = parseInt(response.trim())
-      #new KDNotificationView
-      #  title: stat
       if project.watch != stat
         project.watch = stat
         @kite.run "cat /tmp/guard/#{index}/exchange", (cat_err, cat_response)=>
@@ -106,8 +102,7 @@ class GuardApp extends JView
         
   viewAppended:->
     super
-    @kite.run 'rm -rf /tmp/guard && mkdir -p /tmp/guard && find $HOME -type f -name Guardfile', (err, response)=>
-#    @kite.run 'find $HOME -type f -name Guardfile | grep -v \\/\\\\\\.', (err, response)=>
+    @kite.run 'rm -rf /tmp/guard && mkdir -p /tmp/guard && find $HOME -type f -name Guardfile | grep -v \\/\\\\\\.', (err, response)=>
       @projects.hideLazyLoader()
       for path, i in response.split("\n") when path
         @projects.addItem {path: path.split('/').slice(0, -1).join('/'), name: path.split('/').slice(-2)[0], index: i}

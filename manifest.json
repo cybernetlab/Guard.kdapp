@@ -8,7 +8,7 @@
   "forceUpdate": false,
   "openWith": "lastActive",
   "behavior": "application",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "Guard",
   "identifier": "com.koding.apps.guard",
   "path": "~/Applications/Guard.kdapp",

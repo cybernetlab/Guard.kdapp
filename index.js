@@ -1,4 +1,4 @@
-/* Compiled by kdc on Thu Aug 29 2013 20:21:15 GMT+0000 (UTC) */
+/* Compiled by kdc on Sun Sep 01 2013 12:00:03 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/alexiss/Applications/Guard.kdapp/index.coffee */
@@ -15,7 +15,7 @@ GuardApp = (function(_super) {
     this.kite = KD.getSingleton("kiteController");
     this.info = new KDView({
       cssClass: "information-box",
-      partial: "<p>Guard will scan your home directory for files named &quot;Guardfile&quot; and list it below.\nThen you can start <a href=\"https://github.com/guard/guard\">guard</a> application for each of them</p>\n<p>Waring! RVM is not supported yet. Use native ruby or rbenv.</p>"
+      partial: "<p>Guard will scan your home directory for files named &quot;Guardfile&quot; and list it below.\nThen you can start <a href=\"https://github.com/guard/guard\">guard</a> application for each of them</p>\n<p> RVM is not supported yet. Use native ruby or rbenv.</p>"
     });
     this.projects = new KDListViewController({
       startWithLazyLoader: true,
@@ -146,7 +146,7 @@ GuardApp = (function(_super) {
   GuardApp.prototype.viewAppended = function() {
     var _this = this;
     GuardApp.__super__.viewAppended.apply(this, arguments);
-    return this.kite.run('rm -rf /tmp/guard && mkdir -p /tmp/guard && find $HOME -type f -name Guardfile', function(err, response) {
+    return this.kite.run('rm -rf /tmp/guard && mkdir -p /tmp/guard && find $HOME -type f -name Guardfile | grep -v \\/\\\\\\.', function(err, response) {
       var i, path, _i, _len, _ref, _results;
       _this.projects.hideLazyLoader();
       _ref = response.split("\n");
@@ -177,8 +177,13 @@ ProjectsViewItem = (function(_super) {
   __extends(ProjectsViewItem, _super);
 
   function ProjectsViewItem() {
-    var _this = this;
+    var name, path, _ref,
+      _this = this;
     ProjectsViewItem.__super__.constructor.apply(this, arguments);
+    _ref = this.getData(), path = _ref.path, name = _ref.name;
+    new KDNotificationView({
+      title: name
+    });
     this.guardButton = new KDOnOffSwitch({
       callback: function() {
         return _this.getDelegate().emit("StartGuard", _this);
