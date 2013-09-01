@@ -1,4 +1,4 @@
-/* Compiled by kdc on Sun Sep 01 2013 12:00:03 GMT+0000 (UTC) */
+/* Compiled by kdc on Sun Sep 01 2013 12:07:07 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/alexiss/Applications/Guard.kdapp/index.coffee */
@@ -177,13 +177,8 @@ ProjectsViewItem = (function(_super) {
   __extends(ProjectsViewItem, _super);
 
   function ProjectsViewItem() {
-    var name, path, _ref,
-      _this = this;
+    var _this = this;
     ProjectsViewItem.__super__.constructor.apply(this, arguments);
-    _ref = this.getData(), path = _ref.path, name = _ref.name;
-    new KDNotificationView({
-      title: name
-    });
     this.guardButton = new KDOnOffSwitch({
       callback: function() {
         return _this.getDelegate().emit("StartGuard", _this);
