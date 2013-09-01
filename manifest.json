@@ -8,7 +8,7 @@
   "forceUpdate": false,
   "openWith": "lastActive",
   "behavior": "application",
-  "version": "",
+  "version": "0.1.5",
   "name": "Guard",
   "identifier": "com.koding.apps.guard",
   "path": "~/Applications/Guard.kdapp",
@@ -26,14 +26,14 @@
       }
     },
     "stylesheets": [
-      "http://alexiss.kd.io/.applications/guard/resources/style.css"
+      "./resources/style.css"
     ]
   },
   "options": {
     "type": "tab"
   },
   "icns": {
-    "128": "http://alexiss.kd.io/.applications/guard/resources/guard.128.png"
+    "128": "./resources/guard.128.png"
   },
   "screenshots": [],
   "menu": [],
